@@ -11,7 +11,8 @@ spec:
     #repoURL: 'https://charts.lifecycle.keptn.sh' # helm chart repository
     repoURL: 'https://github.com/sachajw/pangarabbit-lifecycle-toolkit'
     chart: keptn # helm chart name
-    targetRevision: 0.5.1 # helm chart version - use latest available here
+    targetRevision: HEAD # helm chart version - use latest available here
+    path: chart
     helm:
       parameters:
         - name: "commitID"
