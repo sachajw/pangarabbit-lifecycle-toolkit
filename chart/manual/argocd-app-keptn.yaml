@@ -6,13 +6,13 @@ metadata:
   finalizers:
     - resources-finalizer.argocd.argoproj.io # enabling cascading deletion
 spec:
-  project: default
+  project: pangarabbit
   source:
-    #repoURL: 'https://charts.lifecycle.keptn.sh' # helm chart repository
-    repoURL: 'https://github.com/sachajw/pangarabbit-lifecycle-toolkit'
+    repoURL: 'https://charts.lifecycle.keptn.sh' # helm chart repository
+    #repoURL: 'git@github.com:sachajw/pangarabbit-lifecycle-toolkit'
     chart: keptn # helm chart name
-    targetRevision: HEAD # helm chart version - use latest available here
-    path: chart
+    targetRevision: 0.5.1 # helm chart version - use latest available here
+    #path: chart
     helm:
       parameters:
         - name: "commitID"
